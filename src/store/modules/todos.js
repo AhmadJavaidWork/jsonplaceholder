@@ -1,10 +1,25 @@
-const state = {};
+import { GETALL } from './functions';
 
-const getters = {};
+const state = {
+  todos: {},
+};
 
-const actions = {};
+const getters = {
+  todos: state => state.todos,
+};
 
-const mutations = {};
+const actions = {
+  getTodos(context) {
+    console.log('here');
+    GETALL(context, 'todos', 'saveTodos');
+  },
+};
+
+const mutations = {
+  saveTodos(state, todos) {
+    state.todos = todos;
+  },
+};
 
 export default {
   state,

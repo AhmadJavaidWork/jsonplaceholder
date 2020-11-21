@@ -1,9 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <vue-page-transition>
-        <router-view></router-view>
-      </vue-page-transition>
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
