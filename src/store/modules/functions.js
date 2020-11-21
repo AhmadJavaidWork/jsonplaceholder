@@ -9,7 +9,7 @@ export const GETALL = async (context, URL, mutation) => {
 
 export const GET = async (context, URL, mutation, id) => {
   const res = await Api().get(`${URL}/${id}`);
-  if (!res.data.error) context.commit(mutation, res.data);
+  context.commit(mutation, res.data);
 };
 
 export const POST = async (context, URL, mutation, data) => {

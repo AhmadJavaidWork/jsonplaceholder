@@ -2,14 +2,16 @@
   <v-container>
     <v-card color="#FAFAFA" flat class="mx-auto card" width="400px">
       <v-card class="mx-auto todo-card" v-for="todo in todos" :key="todo.id">
-        <v-card-title
+        <h1
           v-bind:class="{
             completed: todo.completed,
             notcompleted: !todo.completed,
           }"
+          class="title"
+          @click="$router.push({ path: `/todo/${todo.id}` })"
         >
           {{ todo.title }}
-        </v-card-title>
+        </h1>
       </v-card>
     </v-card>
   </v-container>
@@ -38,10 +40,15 @@ export default {
 }
 .completed {
   background-color: #66bb6a;
-  color: white;
 }
 .notcompleted {
   background-color: red;
+}
+.title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
   color: white;
+  cursor: pointer;
 }
 </style>
