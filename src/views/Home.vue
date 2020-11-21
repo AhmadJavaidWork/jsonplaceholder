@@ -31,9 +31,9 @@
               height="50px"
               width="300px"
               class="rounded-xl mx-auto option-card"
-              @click="$router.push('/todos')"
+              @click="$router.push('/albums')"
             >
-              <h2 class="card-title">Todos</h2>
+              <h2 class="card-title">Albums</h2>
             </v-card>
           </v-flex>
           <v-flex xs12 md6 lg6>

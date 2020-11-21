@@ -5,6 +5,8 @@ import Todos from '../views/todos/Todos';
 import Todo from '../views/todos/Todo';
 import Posts from '../views/posts/Posts';
 import Post from '../views/posts/Post';
+import Albums from '../views/albums/Albums';
+import Album from '../views/albums/Album';
 
 Vue.use(VueRouter);
 
@@ -33,6 +35,16 @@ const routes = [
     path: '/post/:id',
     name: 'Post',
     component: Post,
+  },
+  {
+    path: '/albums',
+    name: 'Albums',
+    component: Albums,
+  },
+  {
+    path: '/album/:id',
+    name: 'Album',
+    component: Album,
   },
 ];
 

@@ -55,6 +55,7 @@ export default {
       links: [
         { text: 'Todos', route: '/todos' },
         { text: 'Posts', route: '/posts' },
+        { text: 'Albums', route: '/albums' },
       ],
     };
   },
