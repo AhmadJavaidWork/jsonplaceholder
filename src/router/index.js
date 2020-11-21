@@ -1,7 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home';
-import TodoItem from '../views/TodoItem';
+import Todos from '../views/todos/Todos';
+import Todo from '../views/todos/Todo';
+import Posts from '../views/posts/Posts';
+import Post from '../views/posts/Post';
 
 Vue.use(VueRouter);
 
@@ -12,9 +15,24 @@ const routes = [
     component: Home,
   },
   {
+    path: '/todos',
+    name: 'Todos',
+    component: Todos,
+  },
+  {
     path: '/todo/:id',
-    name: 'TodoItem',
-    component: TodoItem,
+    name: 'Todo',
+    component: Todo,
+  },
+  {
+    path: '/posts',
+    name: 'Posts',
+    component: Posts,
+  },
+  {
+    path: '/post/:id',
+    name: 'Post',
+    component: Post,
   },
 ];
 

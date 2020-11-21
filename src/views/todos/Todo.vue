@@ -10,19 +10,14 @@
 </template>
 
 <script>
-import Todo from '../components/todos/Todo';
+import Todo from '../../components/todos/Todo';
 
 export default {
-  name: 'TodoItem',
+  name: 'TodoPage',
   components: {
     Todo,
   },
 };
 </script>
 
-<style scoped>
-.back-btn {
-  margin-left: 40%;
-  margin-top: 50px;
-}
-</style>
+<style scoped></style>

@@ -1,7 +1,7 @@
 import { GETALL, GET } from './functions';
 
 const state = {
-  todos: {},
+  todos: [],
   activeTodo: {},
 };
 

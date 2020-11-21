@@ -1,10 +1,18 @@
 <template>
-  <div class="home"></div>
+  <div>
+    <h1 class="title">Todos</h1>
+    <Todos />
+  </div>
 </template>
 
 <script>
+import Todos from '../../components/todos/Todos';
+
 export default {
-  name: 'Home',
+  name: 'TodosPage',
+  components: {
+    Todos,
+  },
 };
 </script>
 

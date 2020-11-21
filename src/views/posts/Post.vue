@@ -5,24 +5,19 @@
         ><v-icon left>mdi-keyboard-backspace</v-icon>Back</v-btn
       >
     </div>
-    <Todo />
+    <Post />
   </div>
 </template>
 
 <script>
-import Todo from '../components/todos/Todo';
+import Post from '../../components/posts/Post';
 
 export default {
-  name: 'TodoItem',
+  name: 'PostPage',
   components: {
-    Todo,
+    Post,
   },
 };
 </script>
 
-<style scoped>
-.back-btn {
-  margin-left: 40%;
-  margin-top: 50px;
-}
-</style>
+<style scoped></style>

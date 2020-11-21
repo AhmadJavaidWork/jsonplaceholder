@@ -1,10 +1,18 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <h1 class="title">Posts</h1>
+    <Posts />
+  </div>
 </template>
 
 <script>
+import Posts from '../../components/posts/Posts';
+
 export default {
-  name: 'Home',
+  name: 'PostsPage',
+  components: {
+    Posts,
+  },
 };
 </script>
 
