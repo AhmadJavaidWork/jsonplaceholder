@@ -1,9 +1,15 @@
 <template>
   <v-container>
-    <v-card color="#FAFAFA" flat class="mx-auto card" width="400px">
-      <v-card class="mx-auto post-card" v-for="post in posts" :key="post.id">
-        <h1 class="title" @click="$router.push({ path: `/post/${post.id}` })">
-          {{ post.title }}fd
+    <v-card color="#FAFAFA" flat class="mx-auto card" width="600px">
+      <v-card
+        color="#039BE5"
+        class="mx-auto post-card"
+        v-for="post in posts"
+        :key="post.id"
+        @click="$router.push({ path: `/post/${post.id}` })"
+      >
+        <h1 class="title">
+          {{ post.title }}
         </h1>
         <p class="body">{{ post.body }}</p>
       </v-card>
@@ -31,12 +37,13 @@ export default {
 }
 .post-card {
   margin: 20px 0;
+  color: white;
+  cursor: pointer;
 }
 .title {
   padding: 20px 20px;
   padding-bottom: 20px;
   text-align: center;
-  cursor: pointer;
 }
 .body {
   padding: 20px 20px;

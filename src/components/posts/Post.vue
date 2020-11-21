@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card flat class="mx-auto" width="600px">
-      <v-card color="#FAFAFA" flat class="mx-auto card">
+      <v-card color="#039BE5" flat class="mx-auto card">
         <h1 class="title">{{ activePost.title }}</h1>
         <p class="body">{{ activePost.body }}</p>
       </v-card>
@@ -50,9 +50,11 @@ export default {
 .title {
   padding: 20px;
   text-align: center;
+  color: white;
 }
 .body {
   padding: 20px;
+  color: white;
 }
 .comments-title {
   padding: 20px;

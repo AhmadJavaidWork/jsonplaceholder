@@ -34,7 +34,7 @@
             <v-list-item-content>
               <v-list-item-title
                 class="link-title"
-                v-bind:class="{ active: $route.path == link.route }"
+                v-bind:class="{ active: $route.path === link.route }"
                 >{{ link.text }}</v-list-item-title
               >
             </v-list-item-content>
