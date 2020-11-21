@@ -2,7 +2,7 @@
   <v-app>
     <Navbar />
     <v-main>
-      <vue-page-transition>
+      <vue-page-transition name="fade-in-right">
         <router-view></router-view>
       </vue-page-transition>
     </v-main>
