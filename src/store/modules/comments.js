@@ -17,7 +17,6 @@ const actions = {
 const mutations = {
   saveComments(state, comments) {
     state.comments = comments;
-    console.log(comments);
   },
 };
 

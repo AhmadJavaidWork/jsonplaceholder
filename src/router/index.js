@@ -7,6 +7,7 @@ import Posts from '../views/posts/Posts';
 import Post from '../views/posts/Post';
 import Albums from '../views/albums/Albums';
 import Album from '../views/albums/Album';
+import Photos from '../views/Photos';
 
 Vue.use(VueRouter);
 
@@ -45,6 +46,11 @@ const routes = [
     path: '/album/:id',
     name: 'Album',
     component: Album,
+  },
+  {
+    path: '/photos',
+    name: 'Photos',
+    component: Photos,
   },
 ];
 

@@ -56,6 +56,7 @@ export default {
         { text: 'Todos', route: '/todos' },
         { text: 'Posts', route: '/posts' },
         { text: 'Albums', route: '/albums' },
+        { text: 'Photos', route: '/photos' },
       ],
     };
   },
